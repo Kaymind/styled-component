@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+
+import MainCardComponent from "./components/MainCardComponent";
+import CardComponent from "./components/CardComponent";
+import CardInfoComponent from "./components/CardInfoComponent";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <MainCardComponent>
+        <CardInfoComponent />
+        <CardComponent num={523} word={"Posts"} />
+        <CardComponent num={1387} word={"Likes"} />
+        <CardComponent num={146} word={"Follower"} />
+      </MainCardComponent>
     </div>
   );
 }

@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -19,4 +25,15 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+.container {
+  width: 960px;
+  min-width: 768px;
+  height: 800px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, rgb(237,186,107), rgb(204,128,79));
 }
