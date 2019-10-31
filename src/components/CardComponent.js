@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "style-component";
 
 import Card from "./card.style.component";
 
